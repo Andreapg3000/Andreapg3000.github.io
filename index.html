@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Programming Blog</title>
 </head>
 <body>
-    <h1>Welcome to My Blog</h1>
+    <header>
+        <h1>My Programming Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#entry1">Entry 1</a></li>
+                <li><a href="#entry2">Entry 2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="entry1">
+            <h2>Entry 1: My First Day as a Programmer</h2>
+            <p>Today was my first day learning to code. I started with HTML and CSS...</p>
+        </article>
+
+        <article id="entry2">
+            <h2>Entry 2: Learning HTML and CSS</h2>
+            <p>I learned about tags and how to style my web pages...</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Programming Blog</p>
+    </footer>
 </body>
 </html>
+body {
+    font-family: Arial, sans-serif; /* Font type */
+    line-height: 1.5; /* Line height */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Background color */
+}
 
+header {
+    background: #35424a; /* Header background color */
+    color: #ffffff; /* Text color */
+    padding: 20px;
+    text-align: center; /* Center text */
+}
+
+nav ul {
+    list-style: none; /* No bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display items inline */
+    margin: 0 15px; /* Spacing between links */
+}
+
+nav a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+article {
+    background: #ffffff; /* White background for entries */
+    margin: 20px; /* Spacing between entries */
+    padding: 20px; /* Inner spacing */
+    border-radius: 5px; /* Rounded corners */
+}
+
+h2 {
+    font-size: 1.5em; /* Title font size */
+    font-weight: bold; /* Bold text */
+}
